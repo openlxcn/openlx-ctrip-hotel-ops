@@ -1,6 +1,6 @@
 {
   "version": "0.1.1",
-  "updated_at": "2026-09-05T18:28:59.757Z",
+  "updated_at": "2026-09-05T18:56:35.534016+00:00",
   "product_completion": "PARTIAL",
   "summary": [
     {
@@ -42,6 +42,11 @@
       "title": "年度人设与人工服务",
       "state": "IMPLEMENTED_UNVERIFIED",
       "label": "模块已建，真人交付另计"
+    },
+    {
+      "title": "系列数据库同步",
+      "state": "PRODUCTION_STREAM_REGISTERED",
+      "label": "携程、美团、飞猪已登记；真实订单同步待验"
     }
   ],
   "evidence": {
@@ -83,7 +88,18 @@
     "github_url": "https://github.com/openlxcn/openlx-ctrip-hotel-ops/releases/tag/v0.1.1",
     "website_url": "https://ctrip.openlx.cn",
     "release_sha256": "78c09206a0bb8bfda991cf95de6b5d51c4add8817a346f2c45272538d173658b",
-    "independent_lease_review": "PASS_MOCK_ONLY"
+    "independent_lease_review": "PASS_MOCK_ONLY",
+    "series_database": {
+      "implementation": "DEPLOYED",
+      "local_tests": 33,
+      "linux_tests": 33,
+      "mysql_synthetic_checks": 8,
+      "production_sources": 3,
+      "production_business_records": 0,
+      "real_customer_transaction_sync": "NOT_RUN",
+      "account_page": "https://wx.openlx.cn/series",
+      "evidence": "evidence/series-production-verification.json"
+    }
   },
   "open_gaps": [
     "真实商家与内容账号字段映射和权限需实测",
@@ -96,5 +112,6 @@
   ],
   "artifact_state": "BUILT",
   "publication_status_url": "https://ctrip.openlx.cn/status.json",
-  "publication_note": "这是发布后的在线状态，安装包内保留构建时快照。"
+  "publication_note": "这是发布后的在线状态，安装包内保留构建时快照。",
+  "server_revision": "series-sync-v1-20260906"
 }

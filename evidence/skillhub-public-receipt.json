@@ -1,0 +1,19 @@
+{
+  "verified_at": "2026-09-05T18:56:23.396189+00:00",
+  "status": "PUBLISHED_PUBLIC_READBACK_PASS",
+  "public_url": "https://skillhub.cn/skills/user_ae43c502/openlx-ctrip-hotel-ops",
+  "version": "0.1.1",
+  "display_name": "OpenLX 携程酒店运营助手",
+  "description": "先看清门店问题，再做好每天的运营。OpenLX 携程酒店运营助手支持数据导入、经营体检、点评分流与完整离线 HTML 报告；标准／至尊扩展持续运营和内容生产发布。免费长期可用，收费尚未开放，真实后台动作按账号逐项实测。",
+  "logo_status": "PASS",
+  "platform_security_labels": [
+    "科恩实验室 安全，无风险",
+    "云鼎实验室 安全，无风险"
+  ],
+  "download_url": "https://api.skillhub.cn/api/v1/download?slug=%40user_ae43c502%2Fopenlx-ctrip-hotel-ops",
+  "download_sha256": "1121f08bdbaea4e919b6cc3d35c3833850202b47154204f82a11fe24fe399b2b",
+  "download_bytes": 61415,
+  "download_file_count": 23,
+  "release_files_matched": 22,
+  "release_file_mismatches": []
+}

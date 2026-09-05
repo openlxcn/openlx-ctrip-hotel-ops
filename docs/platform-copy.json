@@ -1,0 +1,19 @@
+{
+  "product_id": "openlx-ctrip-hotel-ops",
+  "display_name": "OpenLX 携程酒店运营助手",
+  "functional_version": "0.1.1",
+  "headline": "先看清门店问题，再把每天的运营做扎实。",
+  "short_description_zh": "先看清门店问题，再做好每天的运营。OpenLX 携程酒店运营助手支持数据导入、经营体检、点评分流与完整离线 HTML 报告；标准／至尊扩展持续运营和内容生产发布。免费长期可用，收费尚未开放，真实后台动作按账号逐项实测。",
+  "short_description_en": "Turn hotel data into a complete, offline operations report with prioritized findings and review-reply proposals. Free features remain available. Paid plans are not on sale yet; live Ctrip actions require account-specific verification.",
+  "website": "https://ctrip.openlx.cn",
+  "repository": "https://github.com/openlxcn/openlx-ctrip-hotel-ops",
+  "description_file": "docs/PUBLIC_INTRODUCTION.md",
+  "hero_url": "https://ctrip.openlx.cn/assets/hotel-operations-hero.png",
+  "workflow_url": "https://ctrip.openlx.cn/assets/operation-flow.svg",
+  "commercial_type": [
+    "free",
+    "paid"
+  ],
+  "sales_enabled": false,
+  "real_hotel_read_write": "NOT_RUN"
+}

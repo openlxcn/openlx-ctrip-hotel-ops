@@ -4,8 +4,16 @@ async function api(url,body){if(body&&!csrf)csrf=(await fetch('/api/session').th
 const formData=f=>Object.fromEntries(new FormData(f));
 const textNode=(tag,text)=>{const el=document.createElement(tag);el.textContent=text;return el;};
 function handler(form,fn){form.addEventListener('submit',async e=>{e.preventDefault();const b=form.querySelector('button[type=submit],button:not([type])');if(b)b.disabled=true;try{await fn(formData(form));}catch(err){message(err.message);}finally{if(b)b.disabled=false;}});}
+async function refreshSeries(){
+ const host=$('#series-overview');host.replaceChildren(textNode('p','正在读取系列账户…'));
+ try{const data=await api('/api/series');host.replaceChildren();
+  for(const [id,p]of Object.entries(data.products)){const rows=data.records.filter(r=>r.product_id===id);const orders=id==='openlx-weixin-baimindan'?data.wechat.orders:rows.filter(r=>r.entity_type==='orders').map(r=>r.data);const grants=id==='openlx-weixin-baimindan'?data.wechat.entitlements:rows.filter(r=>r.entity_type==='entitlements').map(r=>r.data);const row=textNode('div',`${p.name} · ${orders.length} 条订单 · ${grants.length} 条权益记录`);row.className='account-row';const a=textNode('a','查看产品 ↗');a.href=p.origin;a.target='_blank';a.rel='noopener';row.append(a);host.append(row);for(const o of orders.slice(0,10))host.append(textNode('p',`${o.id||o.order_no} · ${o.plan||o.package_name||o.package_type} · ¥${Number(o.amount_fen)/100} · ${o.status??o.pay_status}`));for(const g of grants.slice(0,10))host.append(textNode('p',`权益 ${g.plan||g.package_name||g.package_type} · ${g.status} · 到期 ${String(g.expires_at||g.expire_at).slice(0,10)}`));}
+  host.append(textNode('p',`同步状态：${data.local_sync.status}；待同步 ${data.local_sync.pending} 条。账号同步不自动增加产品付费权限。`));
+  if(data.truncated)host.append(textNode('p','记录较多，此页展示部分记录，请进入对应产品查询完整记录。'));
+ }catch(e){host.replaceChildren(textNode('p',e.message));}
+}
 async function refresh(){
- try{const data=await api('/api/account');$('#auth-area').hidden=true;$('#dashboard').hidden=false;$('#welcome').textContent=`${data.user.nickname||data.user.email}，欢迎回来。`;
+ try{const data=await api('/api/account');$('#auth-area').hidden=true;$('#dashboard').hidden=false;$('#welcome').textContent=`${data.user.nickname||data.user.email}，欢迎回来。`;refreshSeries();
   $('#hotels').replaceChildren();document.querySelectorAll('.hotel-picker').forEach(s=>s.replaceChildren());
   for(const h of data.hotels){const row=textNode('div',`${h.name} · ${h.id} · ${h.entitlement?.plan||'FREE'}${h.entitlement?' · 到期 '+h.entitlement.expires_at.slice(0,10):''}`);row.className='account-row';$('#hotels').append(row);document.querySelectorAll('.hotel-picker').forEach(s=>{const o=textNode('option',h.name);o.value=h.id;s.append(o);});}
   if(!data.hotels.length)$('#hotels').append(textNode('p','先登记酒店，免费功能可直接下载安装使用。'));
@@ -26,3 +34,5 @@ handler($('#checkout'),async d=>{const o=await api('/api/orders',d);currentOrder
 function showPrice(){if(!config)return;const f=formData($('#checkout'));$('#checkout-price').textContent=`应付 ¥${config.plans[f.plan][f.cycle+'_fen']/100}，服务${{monthly:'1个月',quarterly:'3个月',annual:'12个月'}[f.cycle]}`;}
 $('#checkout').addEventListener('change',showPrice);
 (async()=>{try{const session=await api('/api/session');csrf=session.csrf;config=await api('/api/public/config');$('#buy').disabled=!config.sales_enabled;for(const[k,v]of Object.entries(config.payment))if(v){const opt=textNode('option',k==='alipay'?'支付宝':'微信支付');opt.value=k;$('#providers').append(opt);}if(config.sales_enabled)$('#sale-notice').textContent='免费功能长期可用。收费含标准和至尊，按月、季、年直接购买，默认不自动续费。';const target=new URLSearchParams(location.search).get('plan');if(['STANDARD','SUPREME'].includes(target))$('#checkout [name=plan]').value=target;showPrice();if(session.has_session)await refresh();}catch(e){message(e.message);}})();
+
+setInterval(()=>{if(!document.hidden&&!$('#dashboard').hidden)refreshSeries();},30000);

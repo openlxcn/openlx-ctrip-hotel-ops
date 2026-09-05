@@ -1,0 +1,2 @@
+[DB] 数据库连接模块已加载
+{"status":"REAL_MYSQL_SYNTHETIC_INTEGRATION_PASS","checks":["write_readback","idempotent_retry","update_readback","user_isolation","stale_revision_rejected","owner_change_rejected","unknown_user_rejected","delete_readback"],"real_customer_transactions":0,"test_tables":"series_probe_1788634522943_","observed_at":"2026-09-05T18:55:23.241Z"}

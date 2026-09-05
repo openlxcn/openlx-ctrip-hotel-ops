@@ -1,0 +1,218 @@
+TAP version 13
+# (node:2795654) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: authorized pricing isolates one failure and rejects changed scope
+ok 1 - authorized pricing isolates one failure and rejects changed scope
+  ---
+  duration_ms: 79.749776
+  type: 'test'
+  ...
+# Subtest: daily content produces only one present-day draft and never calls submit without policy
+ok 2 - daily content produces only one present-day draft and never calls submit without policy
+  ---
+  duration_ms: 80.194419
+  type: 'test'
+  ...
+# Subtest: model sends allowlisted facts only and output stays awaiting review
+ok 3 - model sends allowlisted facts only and output stays awaiting review
+  ---
+  duration_ms: 44.311866
+  type: 'test'
+  ...
+# (node:2795655) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: all prices are exact and no trial or voucher package can create order
+ok 4 - all prices are exact and no trial or voucher package can create order
+  ---
+  duration_ms: 110.893726
+  type: 'test'
+  ...
+# Subtest: calendar months clamp correctly at month end
+ok 5 - calendar months clamp correctly at month end
+  ---
+  duration_ms: 0.262823
+  type: 'test'
+  ...
+# Subtest: payment exact amount, merchant method, idempotency and renewal preserve entitlement
+ok 6 - payment exact amount, merchant method, idempotency and renewal preserve entitlement
+  ---
+  duration_ms: 78.868435
+  type: 'test'
+  ...
+# Subtest: service ticket is not delivered and annual persona requires annual plan
+ok 7 - service ticket is not delivered and annual persona requires annual plan
+  ---
+  duration_ms: 77.992848
+  type: 'test'
+  ...
+# Subtest: HTTP website isolates session, requires CSRF and exposes no test-payment bypass
+ok 8 - HTTP website isolates session, requires CSRF and exposes no test-payment bypass
+  ---
+  duration_ms: 264.56585
+  type: 'test'
+  ...
+# Subtest: registered device refresh is revocable and concurrent writers cannot both hold a lease
+ok 9 - registered device refresh is revocable and concurrent writers cannot both hold a lease
+  ---
+  duration_ms: 85.576497
+  type: 'test'
+  ...
+# (node:2795658) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: signed device enrollment rejects swapping another valid token
+ok 10 - signed device enrollment rejects swapping another valid token
+  ---
+  duration_ms: 1.769361
+  type: 'test'
+  ...
+# Subtest: heartbeat and explicit assertion share one renewal and cannot mask its failure
+ok 11 - heartbeat and explicit assertion share one renewal and cannot mask its failure
+  ---
+  duration_ms: 0.923597
+  type: 'test'
+  ...
+# Subtest: a renewal response for another hotel invalidates the lease before the caller can write
+ok 12 - a renewal response for another hotel invalidates the lease before the caller can write
+  ---
+  duration_ms: 0.57065
+  type: 'test'
+  ...
+# (node:2795707) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: mixed five-star review always requires confirmation
+ok 13 - mixed five-star review always requires confirmation
+  ---
+  duration_ms: 2.327199
+  type: 'test'
+  ...
+# Subtest: only unambiguous fallback whitelist replies automatically
+ok 14 - only unambiguous fallback whitelist replies automatically
+  ---
+  duration_ms: 0.526456
+  type: 'test'
+  ...
+# Subtest: free reports keep every issue and unknown section; injection and sensitive fields are escaped
+ok 15 - free reports keep every issue and unknown section; injection and sensitive fields are escaped
+  ---
+  duration_ms: 3.731329
+  type: 'test'
+  ...
+# Subtest: paid report and print source remove promotional footer without losing provenance
+ok 16 - paid report and print source remove promotional footer without losing provenance
+  ---
+  duration_ms: 0.968967
+  type: 'test'
+  ...
+# Subtest: no fictitious whole-hotel occupancy without authoritative scope
+ok 17 - no fictitious whole-hotel occupancy without authoritative scope
+  ---
+  duration_ms: 0.418808
+  type: 'test'
+  ...
+# Subtest: settlement is not deducted twice and unknown costs stay unknown
+ok 18 - settlement is not deducted twice and unknown costs stay unknown
+  ---
+  duration_ms: 0.367435
+  type: 'test'
+  ...
+# Subtest: competitor sold out and unequal benefits never treated as comparable zero
+ok 19 - competitor sold out and unequal benefits never treated as comparable zero
+  ---
+  duration_ms: 0.50326
+  type: 'test'
+  ...
+# Subtest: price guardrails reject free autopilot, below floor, cumulative drift and conflicts
+ok 20 - price guardrails reject free autopilot, below floor, cumulative drift and conflicts
+  ---
+  duration_ms: 0.860207
+  type: 'test'
+  ...
+# Subtest: PMS and stale event signals cannot authorize automated pricing
+ok 21 - PMS and stale event signals cannot authorize automated pricing
+  ---
+  duration_ms: 1.310745
+  type: 'test'
+  ...
+# Subtest: action content identity gives idempotency and binds final approval
+ok 22 - action content identity gives idempotency and binds final approval
+  ---
+  duration_ms: 68.37429
+  type: 'test'
+  ...
+# Subtest: invalid one asset does not block eligible files, duplicates are identified
+ok 23 - invalid one asset does not block eligible files, duplicates are identified
+  ---
+  duration_ms: 45.786788
+  type: 'test'
+  ...
+# Subtest: persona is used in content, generated drafts are never published
+ok 24 - persona is used in content, generated drafts are never published
+  ---
+  duration_ms: 3.135172
+  type: 'test'
+  ...
+# Subtest: license binds product, hotel, expiry and signature; client plan is not trusted
+ok 25 - license binds product, hotel, expiry and signature; client plan is not trusted
+  ---
+  duration_ms: 3.622904
+  type: 'test'
+  ...
+# Subtest: hotel snapshot mismatch and noninteger prices fail before use
+ok 26 - hotel snapshot mismatch and noninteger prices fail before use
+  ---
+  duration_ms: 0.572617
+  type: 'test'
+  ...
+# Subtest: read failure uses marked fallback without inventing a successful live read
+ok 27 - read failure uses marked fallback without inventing a successful live read
+  ---
+  duration_ms: 75.430389
+  type: 'test'
+  ...
+# Subtest: preflight rejection is persisted as not executed and preserves approval hash
+ok 28 - preflight rejection is persisted as not executed and preserves approval hash
+  ---
+  duration_ms: 65.516335
+  type: 'test'
+  ...
+# (node:2795730) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: series signing rejects wrong product, changed body and expired request
+ok 29 - series signing rejects wrong product, changed body and expired request
+  ---
+  duration_ms: 10.571487
+  type: 'test'
+  ...
+# Subtest: transactional outbox retains committed payment and excludes tokens and private ticket content
+ok 30 - transactional outbox retains committed payment and excludes tokens and private ticket content
+  ---
+  duration_ms: 164.879868
+  type: 'test'
+  ...
+# Subtest: uncertain network result replays exact durable batch, then catches later edits and deletions
+ok 31 - uncertain network result replays exact durable batch, then catches later edits and deletions
+  ---
+  duration_ms: 164.533376
+  type: 'test'
+  ...
+# Subtest: series validation rejects leaked credentials, foreign product and invalid money
+ok 32 - series validation rejects leaked credentials, foreign product and invalid money
+  ---
+  duration_ms: 0.557151
+  type: 'test'
+  ...
+# Subtest: late acknowledgement from a second process cannot regress the durable cursor
+ok 33 - late acknowledgement from a second process cannot regress the durable cursor
+  ---
+  duration_ms: 163.013455
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1179.341779

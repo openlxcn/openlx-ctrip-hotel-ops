@@ -2,13 +2,17 @@
 
 ![OpenLX酒店运营主视觉](public/assets/hotel-operations-hero.png)
 
-**把繁琐留给助手，把时间留给客人。**
+**先看清门店问题，再把每天的运营做扎实。**
 
-面向酒店、客栈与民宿的独立运营技能。免费完成经营体检、完整HTML报告与点评处理，收费版扩展持续跟踪、收益策略与内容获客。
+点评要回，房价要看，房态要查，笔记还要发。OpenLX 把门店数据整理成一份完整经营体检，说明问题、依据和处理顺序，让每天的运营有清单、有记录、能复盘。
 
-[官网](https://ctrip.openlx.cn) · [下载安装](https://ctrip.openlx.cn/#install) · [完整报告示例](https://ctrip.openlx.cn/reports) · [使用说明](https://ctrip.openlx.cn/docs) · [能力状态](skills/openlx-ctrip-hotel-ops/references/status.json)
+**先免费拿到完整报告。** 导入真实数据，在本地查看全部发现、改进建议和点评回复提案。免费功能长期可用；标准／至尊继续扩展持续运营、收益策略与内容生产发布。
+
+[官网](https://ctrip.openlx.cn) · [腾讯 SkillHub](https://skillhub.cn/skills/user_ae43c502/openlx-ctrip-hotel-ops) · [下载安装](https://ctrip.openlx.cn/#install) · [完整报告示例](https://ctrip.openlx.cn/reports) · [使用说明](https://ctrip.openlx.cn/docs) · [能力状态](skills/openlx-ctrip-hotel-ops/references/status.json)
 
 > **当前版本0.1.1：本地功能可运行，真实酒店账号适配待验证。** 代码实现、模拟测试、后台操作和公开回读分别记账。收费尚未开放；完整权益目标保留，不把生成草稿当成已发布。
+
+完整产品介绍与平台提交文案见[对外介绍](docs/PUBLIC_INTRODUCTION.md)。
 
 ## 12项优势
 
@@ -87,11 +91,13 @@ node scripts/ops.mjs report --workspace /path/to/hotel-work
 
 ## 登录、支付和数据
 
-官网注册登录复用wx.openlx.cn的OpenLX账号与邮箱验证服务，SMTP相同。携程订单、酒店绑定、设备、签名许可和人工服务工单独立存储。支付模块复用原微信支付与支付宝配置；真实支付交易尚未执行，当前不开放收费。
+官网注册登录复用wx.openlx.cn的OpenLX账号与邮箱验证服务，SMTP相同。用户身份来自 wx 同一用户库。携程订单、酒店绑定、权益、设备元数据和服务状态通过持久化变更队列同步到 wx 同一个 MySQL，两个会员中心读取统一系列概览；各产品仍按实际购买范围使用。浏览器登录资料、设备令牌和许可证私钥不进入同步记录。支付模块复用原微信支付与支付宝配置；真实支付交易尚未执行，当前不开放收费。
 
 许可证绑定本机设备ID，守护运行自动在线续取；登记的付费写任务使用服务器单店租约，真实双设备操作仍待实测。
 
 浏览器Profile、Cookie、客人身份信息不上传官网，也不进入本仓库。报告默认本地保存、可离线打开。支付私钥、SMTP配置、运行数据库不包含在发布物中。
+
+统一系列入口：[OpenLX 系列会员中心](https://wx.openlx.cn/series)。季度／年度通票尚未开售；同步故障保留待同步记录并自动重试，不中断本地体检和报告。技术合同见[数据库同步](docs/SERIES_DATABASE.md)。
 
 ## 当前验证
 

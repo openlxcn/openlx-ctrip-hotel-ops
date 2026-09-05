@@ -1,0 +1,111 @@
+{
+  "observed_at": "2026-09-05T18:56:35.534016+00:00",
+  "implementation": "DEPLOYED",
+  "shared_database": "same MySQL as wx users; new openlx_series_sources/openlx_series_records",
+  "user_identity": "wx users.id authoritative",
+  "sources_verified_at": "2026-09-05T18:55:50.034Z",
+  "sources": [
+    {
+      "product_id": "openlx-ctrip-hotel-ops",
+      "stream_id": "8c3a3e79-334f-4291-bfe2-698862af08be",
+      "revision": 0,
+      "synced_at": "2026-09-05T18:52:11.082000Z"
+    },
+    {
+      "product_id": "openlx-fliggy-hotel-ops",
+      "stream_id": "027d1084-e041-4975-9807-c07a0ec20832",
+      "revision": 0,
+      "synced_at": "2026-09-05T18:53:01.496000Z"
+    },
+    {
+      "product_id": "openlx-meituan-hotel-ops",
+      "stream_id": "2930811b-446c-40b3-bd68-99f98a0d11a8",
+      "revision": 0,
+      "synced_at": "2026-09-05T18:53:43.495000Z"
+    }
+  ],
+  "production_series_records": 0,
+  "real_customer_transaction_sync": "NOT_RUN_NO_REAL_SERIES_ORDERS",
+  "registration_login_email_delivery": "NOT_RUN",
+  "cross_domain_sso": "NOT_IMPLEMENTED",
+  "pass_issuance": "NOT_IMPLEMENTED_NOT_ON_SALE",
+  "local_tests": {
+    "passed": 33,
+    "failed": 0
+  },
+  "linux_tests": {
+    "passed": 33,
+    "failed": 0
+  },
+  "mysql_test": {
+    "status": "REAL_MYSQL_SYNTHETIC_INTEGRATION_PASS",
+    "checks": [
+      "write_readback",
+      "idempotent_retry",
+      "update_readback",
+      "user_isolation",
+      "stale_revision_rejected",
+      "owner_change_rejected",
+      "unknown_user_rejected",
+      "delete_readback"
+    ],
+    "real_customer_transactions": 0,
+    "test_tables": "series_probe_1788634522943_",
+    "observed_at": "2026-09-05T18:55:23.241Z"
+  },
+  "remaining_mysql_probe_tables": 0,
+  "http": [
+    {
+      "url": "https://wx.openlx.cn/health",
+      "status": 200,
+      "new_intro_present": false,
+      "series_link_present": false
+    },
+    {
+      "url": "https://ctrip.openlx.cn/health",
+      "status": 200,
+      "new_intro_present": false,
+      "series_link_present": false
+    },
+    {
+      "url": "https://wx.openlx.cn/series",
+      "status": 200,
+      "new_intro_present": false,
+      "series_link_present": false
+    },
+    {
+      "url": "https://wx.openlx.cn/account",
+      "status": 200,
+      "new_intro_present": false,
+      "series_link_present": true
+    },
+    {
+      "url": "https://wx.openlx.cn/api/user/series",
+      "status": 401
+    },
+    {
+      "url": "https://ctrip.openlx.cn/api/series",
+      "status": 401
+    },
+    {
+      "url": "https://ctrip.openlx.cn/",
+      "status": 200,
+      "new_intro_present": true,
+      "series_link_present": false
+    }
+  ],
+  "deployed_sha256": {
+    "shared/wx-api/series.cjs": "8699f37082d4aecaee1e37069bf72dd8fa8dbbf1ceda15686eac05c00ed01d01",
+    "shared/wx-api/series.html": "58549b208762fd28b68bace50f48e52007818bfa9f6a8033d88cbab6cf66e219",
+    "shared/wx-api/series.js": "63a114fba62ee9c7f4cb7b16528979458c15518f28d0a51b703442dc0ff481be",
+    "src/server.mjs": "46b8c167f8bce75578cbda5962f2dcbe9c6b6748bfdcfc76ad4d03f9f07f5b36",
+    "src/series-sync.mjs": "7586490c349d5c647ca75161090f92b7161aafeff1b35f6b0d0f8a27af67be3c",
+    "public/index.html": "7ab2c16ea0f1593b41abfd5a8222159ce67c0ab5346d3ea5afd6e0a1aaf9672a",
+    "public/account.js": "8198e08ca5e3aab50db8a11e8d8c4bcdcc1aa77e8237e476e726e7ed9a958efe",
+    "public/docs.html": "2054c77e8bcc654e168fc78947a891e3566563c2204277ba9201633aece7a26b"
+  },
+  "backup": "/root/openlx-series-backups/20260905T185129Z",
+  "platform_status_file": "../coordination/ctrip-platform-publishing/PUBLISHING_STATUS.md",
+  "paid_transactions": 0,
+  "hotel_platform_actions": 0
+}

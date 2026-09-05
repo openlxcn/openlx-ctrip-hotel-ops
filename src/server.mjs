@@ -7,6 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {catalog,safeId,now} from '../skills/openlx-ctrip-hotel-ops/scripts/core.mjs';
 import {openStore} from './store.mjs';
 import {commerceBridge,identityRequest} from './bridge.mjs';
+import {createSync} from './series-sync.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export function createApp(options={}){
@@ -14,6 +15,7 @@ export function createApp(options={}){
   const dataDir=options.dataDir||process.env.DATA_DIR||path.join(root,'data');
   const identityOrigin=process.env.OPENLX_IDENTITY_ORIGIN||'https://wx.openlx.cn';
   const store=options.store||openStore(dataDir);
+  const series=options.series||createSync(store.db,{origin:identityOrigin,keyFile:process.env.OPENLX_SERIES_KEY_FILE});
   const bridge=options.bridge||commerceBridge(process.env.OPENLX_SHARED_ROOT,origin);
   const identity=options.identity||((route,body,token)=>identityRequest(identityOrigin,route,body,token));
   const sales=process.env.SALES_ENABLED==='true';const secure=origin.startsWith('https:');
@@ -55,6 +57,11 @@ export function createApp(options={}){
     delete r.httpStatus;res.status(r.success?200:400).json(r);
   }));
   app.post('/api/auth/logout',wrap(async(req,res)=>{if(req.cookies.ctrip_session)await identity('/api/user/logout',{},req.cookies.ctrip_session);res.set('Set-Cookie',cookie('ctrip_session','',0));res.json({success:true});}));
+  app.get('/api/series',session,wrap(async(req,res)=>{
+    const result=await identity('/api/user/series',undefined,req.cookies.ctrip_session);
+    if(!result.success||String(result.data?.user_id)!==String(req.user.id))return res.status(503).json({success:false,error:'系列账户数据暂不可用，酒店本地记录仍可使用'});
+    res.json({success:true,data:{...result.data,local_sync:series.status()}});
+  }));
   app.get('/api/account',session,(req,res)=>{
     const uid=String(req.user.id),hotels=store.db.prepare('SELECT * FROM hotels WHERE user_id=?').all(uid).map(h=>({...h,entitlement:store.active(uid,h.id)}));
     res.json({success:true,data:{user:{id:uid,nickname:req.user.nickname,email:req.user.email,email_verified:req.user.email_verified},hotels,orders:store.db.prepare('SELECT id,hotel_id,plan,cycle,amount_fen,status,created_at FROM orders WHERE user_id=? ORDER BY created_at DESC LIMIT 50').all(uid),tickets:store.db.prepare('SELECT * FROM tickets WHERE user_id=? ORDER BY created_at DESC').all(uid),devices:store.db.prepare('SELECT * FROM devices WHERE user_id=?').all(uid)}});
@@ -96,6 +103,6 @@ export function createApp(options={}){
   app.get('/docs',(_req,res)=>res.sendFile(path.join(root,'public/docs.html')));
   app.get('/reports',(_req,res)=>res.sendFile(path.join(root,'public/report-demo.html')));
   app.use((err,req,res,_next)=>{const safe=err.code==='SQLITE_CONSTRAINT_UNIQUE'?'该记录已存在，请查看现有记录':err.message||'请求失败';res.status(400).json({success:false,error:safe.replace(/\/www\/[^\s]*/g,'[服务器路径]')});});
-  return {app,store};
+  return {app,store,series};
 }
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){const {app}=createApp();const port=Number(process.env.PORT||1986);app.listen(port,process.env.HOST||'127.0.0.1',()=>console.log(`openlx-ctrip-hotel-ops listening on ${port}`));}
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){const {app,series}=createApp();series.start();const port=Number(process.env.PORT||1986);app.listen(port,process.env.HOST||'127.0.0.1',()=>console.log(`openlx-ctrip-hotel-ops listening on ${port}`));}

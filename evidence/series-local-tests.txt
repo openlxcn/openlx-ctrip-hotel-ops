@@ -1,0 +1,45 @@
+
+> openlx-ctrip-hotel-ops@0.1.1 test
+> node --test tests/*.test.mjs
+
+✔ authorized pricing isolates one failure and rejects changed scope (6.314667ms)
+✔ daily content produces only one present-day draft and never calls submit without policy (16.304958ms)
+✔ model sends allowlisted facts only and output stays awaiting review (5.1845ms)
+✔ all prices are exact and no trial or voucher package can create order (7.35575ms)
+✔ calendar months clamp correctly at month end (0.0945ms)
+✔ payment exact amount, merchant method, idempotency and renewal preserve entitlement (3.630875ms)
+✔ service ticket is not delivered and annual persona requires annual plan (3.352916ms)
+✔ HTTP website isolates session, requires CSRF and exposes no test-payment bypass (47.002042ms)
+✔ registered device refresh is revocable and concurrent writers cannot both hold a lease (7.003125ms)
+✔ signed device enrollment rejects swapping another valid token (0.983625ms)
+✔ heartbeat and explicit assertion share one renewal and cannot mask its failure (0.646917ms)
+✔ a renewal response for another hotel invalidates the lease before the caller can write (0.114334ms)
+✔ mixed five-star review always requires confirmation (1.102625ms)
+✔ only unambiguous fallback whitelist replies automatically (0.18125ms)
+✔ free reports keep every issue and unknown section; injection and sensitive fields are escaped (1.743916ms)
+✔ paid report and print source remove promotional footer without losing provenance (0.57425ms)
+✔ no fictitious whole-hotel occupancy without authoritative scope (0.195834ms)
+✔ settlement is not deducted twice and unknown costs stay unknown (0.194792ms)
+✔ competitor sold out and unequal benefits never treated as comparable zero (0.1155ms)
+✔ price guardrails reject free autopilot, below floor, cumulative drift and conflicts (0.397375ms)
+✔ PMS and stale event signals cannot authorize automated pricing (0.0945ms)
+✔ action content identity gives idempotency and binds final approval (3.665791ms)
+✔ invalid one asset does not block eligible files, duplicates are identified (4.989125ms)
+✔ persona is used in content, generated drafts are never published (0.684625ms)
+✔ license binds product, hotel, expiry and signature; client plan is not trusted (1.110083ms)
+✔ hotel snapshot mismatch and noninteger prices fail before use (0.313166ms)
+✔ read failure uses marked fallback without inventing a successful live read (6.429959ms)
+✔ preflight rejection is persisted as not executed and preserves approval hash (3.905333ms)
+✔ series signing rejects wrong product, changed body and expired request (1.433042ms)
+✔ transactional outbox retains committed payment and excludes tokens and private ticket content (11.098875ms)
+✔ uncertain network result replays exact durable batch, then catches later edits and deletions (11.134125ms)
+✔ series validation rejects leaked credentials, foreign product and invalid money (0.184541ms)
+✔ late acknowledgement from a second process cannot regress the durable cursor (7.188167ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 196.635792
