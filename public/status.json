@@ -1,6 +1,6 @@
 {
   "version": "0.1.1",
-  "updated_at": "2026-09-05T18:27:44.270372+00:00",
+  "updated_at": "2026-09-05T18:28:59.757Z",
   "product_completion": "PARTIAL",
   "summary": [
     {
@@ -64,7 +64,7 @@
     "payment_transaction": "NOT_RUN",
     "smtp_delivery": "NOT_RUN",
     "website": "DEPLOYED_HTTPS_PUBLIC_READBACK_PASS",
-    "github_release": "BUILD_READY",
+    "github_release": "PUBLISHED_DOWNLOAD_VERIFIED",
     "smtp_connection_auth": "CONNECTION_AUTH_PASS",
     "shared_identity_proxy": "CONFIGURED_BACKEND_ALIVE_LOGIN_NOT_RUN",
     "payment_configuration": {
@@ -81,7 +81,9 @@
       "page_errors": 0
     },
     "github_url": "https://github.com/openlxcn/openlx-ctrip-hotel-ops/releases/tag/v0.1.1",
-    "website_url": "https://ctrip.openlx.cn"
+    "website_url": "https://ctrip.openlx.cn",
+    "release_sha256": "78c09206a0bb8bfda991cf95de6b5d51c4add8817a346f2c45272538d173658b",
+    "independent_lease_review": "PASS_MOCK_ONLY"
   },
   "open_gaps": [
     "真实商家与内容账号字段映射和权限需实测",
@@ -94,5 +96,5 @@
   ],
   "artifact_state": "BUILT",
   "publication_status_url": "https://ctrip.openlx.cn/status.json",
-  "publication_note": "安装包内记录构建时状态；网站和GitHub发布后证据以publication_status_url及仓库evidence/release-verification.json为准。"
+  "publication_note": "这是发布后的在线状态，安装包内保留构建时快照。"
 }

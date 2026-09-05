@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-05T18:28:59.754Z",
+  "version": "0.1.1",
+  "status": "PUBLIC_DOWNLOAD_HASH_VERIFIED",
+  "github": "https://github.com/openlxcn/openlx-ctrip-hotel-ops/releases/tag/v0.1.1",
+  "website": "https://ctrip.openlx.cn",
+  "checks": {
+    "local": {
+      "bytes": 60206,
+      "sha256": "78c09206a0bb8bfda991cf95de6b5d51c4add8817a346f2c45272538d173658b"
+    },
+    "github": {
+      "bytes": 60206,
+      "sha256": "78c09206a0bb8bfda991cf95de6b5d51c4add8817a346f2c45272538d173658b"
+    },
+    "website": {
+      "bytes": 60206,
+      "sha256": "78c09206a0bb8bfda991cf95de6b5d51c4add8817a346f2c45272538d173658b"
+    }
+  }
+}
