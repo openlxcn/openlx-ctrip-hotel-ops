@@ -1,0 +1,33 @@
+{
+  "status": "SUBMITTED_PENDING_PUBLICATION",
+  "published": false,
+  "cli_version": "0.23.3",
+  "owner": "openlxcn",
+  "version": "0.1.1",
+  "file_count": 23,
+  "fingerprint": "0d65d77fc39c9d0f3d4923d3cc612a4923323de31ef919f9d08e42278b9056d3",
+  "public_url": null,
+  "submitted": true,
+  "license": "MIT-0",
+  "license_authorized": true,
+  "version_id": "k9723zqspehvqre9hjgr1w3cgh8dtxb1",
+  "attempt_id": "zx73zzmmn8g7pjqp55adt64jqs8dv4hm",
+  "submitted_at": "2026-09-05T19:06:34.795100+00:00",
+  "owner_detail_url": "https://clawhub.ai/openlxcn/skills/openlx-ctrip-hotel-ops",
+  "summary": "Turn hotel data into a complete, offline operations report with prioritized findings and review-reply proposals. Free features remain available. Paid plans are not on sale yet; live Ctrip actions require account-specific verification.",
+  "summary_save_evidence": "Owner settings toast: Summary updated.",
+  "summary_applied": true,
+  "moderation": {
+    "isSuspicious": false,
+    "isMalwareBlocked": false,
+    "verdict": "clean",
+    "reasonCodes": [],
+    "summary": "No suspicious patterns detected.",
+    "engineVersion": "v2.4.26",
+    "updatedAt": 1788635178147,
+    "evidence": [],
+    "legacyReason": "pending.publication"
+  },
+  "last_readback": "Official CLI: skill=null, latestVersion=null, legacyReason=pending.publication; owner page Skill hidden, current version None",
+  "verified_at": "2026-09-05T19:09:03.544243+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "status": "pending-publication",
+  "slug": "openlx-ctrip-hotel-ops",
+  "displayName": "OpenLX 携程酒店运营助手",
+  "version": "0.1.1",
+  "fileCount": 23,
+  "fingerprint": "0d65d77fc39c9d0f3d4923d3cc612a4923323de31ef919f9d08e42278b9056d3",
+  "versionId": "k9723zqspehvqre9hjgr1w3cgh8dtxb1",
+  "publicationStatus": "pending",
+  "attemptId": "zx73zzmmn8g7pjqp55adt64jqs8dv4hm",
+  "submitted_at": "2026-09-05T19:06:34.795100+00:00",
+  "license": "MIT-0",
+  "files_manifest": "clawhub-prepublish-verification.json",
+  "source_original_files_match": 22
+}
