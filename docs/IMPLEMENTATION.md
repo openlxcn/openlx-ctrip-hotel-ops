@@ -16,6 +16,7 @@
 | 官网与会员中心 | public、src/server.mjs | 免费/收费说明、注册登录、酒店/设备/工单/订单页面 |
 | 注册及SMTP | src/bridge.mjs | 复用wx.openlx.cn身份服务及其邮件链路 |
 | 支付与许可 | src/bridge.mjs、store.mjs | 同商户支付模块、独立订单及签名许可，真实交易未执行 |
+| 设备许可续取及写租约 | licensing.mjs、store.mjs | 绑定设备、在线续取、服务器单店互斥；真实跨机操作待验 |
 | 人工服务及退款记账 | scripts/service-admin.mjs | 服务器本地操作，必须附交付/平台退款证据 |
 
 运行数据与密钥不进入Git。`OPENLX_SHARED_ROOT`是服务器现有服务的代码路径，加载原支付模块与配置；不会把微信业务代码或凭据复制进公开仓库。账户身份共享，携程套餐、订单、设备与人工权益独立。

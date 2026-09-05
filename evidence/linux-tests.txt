@@ -1,0 +1,44 @@
+(node:2774352) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ authorized pricing isolates one failure and rejects changed scope (50.175448ms)
+✔ daily content produces only one present-day draft and never calls submit without policy (64.236702ms)
+✔ model sends allowlisted facts only and output stays awaiting review (33.659895ms)
+(node:2774353) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ all prices are exact and no trial or voucher package can create order (69.610518ms)
+✔ calendar months clamp correctly at month end (0.257965ms)
+✔ payment exact amount, merchant method, idempotency and renewal preserve entitlement (46.466337ms)
+✔ service ticket is not delivered and annual persona requires annual plan (57.767432ms)
+✔ HTTP website isolates session, requires CSRF and exposes no test-payment bypass (144.36494ms)
+✔ registered device refresh is revocable and concurrent writers cannot both hold a lease (63.313534ms)
+(node:2774359) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ signed device enrollment rejects swapping another valid token (2.301655ms)
+✔ heartbeat and explicit assertion share one renewal and cannot mask its failure (1.222173ms)
+✔ a renewal response for another hotel invalidates the lease before the caller can write (0.573541ms)
+(node:2774374) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ mixed five-star review always requires confirmation (2.444136ms)
+✔ only unambiguous fallback whitelist replies automatically (0.537854ms)
+✔ free reports keep every issue and unknown section; injection and sensitive fields are escaped (3.535808ms)
+✔ paid report and print source remove promotional footer without losing provenance (0.951812ms)
+✔ no fictitious whole-hotel occupancy without authoritative scope (0.416806ms)
+✔ settlement is not deducted twice and unknown costs stay unknown (0.467136ms)
+✔ competitor sold out and unequal benefits never treated as comparable zero (0.522761ms)
+✔ price guardrails reject free autopilot, below floor, cumulative drift and conflicts (1.363656ms)
+✔ PMS and stale event signals cannot authorize automated pricing (0.755576ms)
+✔ action content identity gives idempotency and binds final approval (46.233892ms)
+✔ invalid one asset does not block eligible files, duplicates are identified (38.630887ms)
+✔ persona is used in content, generated drafts are never published (0.835798ms)
+✔ license binds product, hotel, expiry and signature; client plan is not trusted (2.895598ms)
+✔ hotel snapshot mismatch and noninteger prices fail before use (0.531202ms)
+✔ read failure uses marked fallback without inventing a successful live read (29.78446ms)
+✔ preflight rejection is persisted as not executed and preserves approval hash (43.002268ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 604.78876

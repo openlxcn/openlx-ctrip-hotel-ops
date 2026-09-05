@@ -8,7 +8,7 @@
 
 [官网](https://ctrip.openlx.cn) · [下载安装](https://ctrip.openlx.cn/#install) · [完整报告示例](https://ctrip.openlx.cn/reports) · [使用说明](https://ctrip.openlx.cn/docs) · [能力状态](skills/openlx-ctrip-hotel-ops/references/status.json)
 
-> **当前版本0.1.0：本地功能可运行，真实酒店账号适配待验证。** 代码实现、模拟测试、后台操作和公开回读分别记账。收费尚未开放；完整权益目标保留，不把生成草稿当成已发布。
+> **当前版本0.1.1：本地功能可运行，真实酒店账号适配待验证。** 代码实现、模拟测试、后台操作和公开回读分别记账。收费尚未开放；完整权益目标保留，不把生成草稿当成已发布。
 
 ## 12项优势
 
@@ -96,12 +96,12 @@ node scripts/ops.mjs report --workspace /path/to/hotel-work
 ## 当前验证
 
 - 本地报告、点评分流、价格护栏、素材与人设、许可和支付账本有可运行代码与回归测试。
-- 独立macOS安装及示例报告已做行为验证；Linux和Windows按发行状态分别列明。
+- macOS与Linux已实际安装、运行doctor并生成演示报告；Windows尚未实测。
 - 实际携程字段、改价、接单、点评提交、笔记提交及公开状态还没有账户实测。
 - 专属浏览器和笔记分阶段执行器已实现，字段映射必须来自实际账户，未内置虚构选择器。
 - 内容支持规则模板、人设及用户选择的模型API；日程执行器已实现，真实模型连接、长期运行和笔记自动提交仍需实测。
 
-完整实现说明见[IMPLEMENTATION.md](docs/IMPLEMENTATION.md)，逐项状态见[status.json](skills/openlx-ctrip-hotel-ops/references/status.json)。
+完整实现说明见[IMPLEMENTATION.md](docs/IMPLEMENTATION.md)，原46项验收及42项能力映射均保留；逐项状态见[status.json](skills/openlx-ctrip-hotel-ops/references/status.json)。
 
 ## 开发与自检
 

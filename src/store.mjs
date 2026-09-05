@@ -43,13 +43,14 @@ export function openStore(dir){
   function license(user,hotel,device){
     const e=active(user,hotel);if(!e)throw Error('NO_PAID_ENTITLEMENT');
     const d=db.prepare('SELECT * FROM devices WHERE id=? AND user_id=? AND hotel_id=? AND active=1').get(device,String(user),hotel);if(!d)throw Error('DEVICE_NOT_REGISTERED');
-    const p={product:catalog.id,user_id:String(user),hotel_id:hotel,device_id:device,refresh_origin:'https://ctrip.openlx.cn',plan:e.plan,billing_cycle:e.cycle,expires_at:e.expires_at,issued_at:now(),offline_valid_until:new Date(Math.min(Date.parse(e.expires_at),Date.now()+86400000)).toISOString(),entitlement_id:e.id};
+    const tokenHash=db.prepare('SELECT hash FROM device_tokens WHERE device_id=? AND user_id=? AND hotel_id=?').get(device,String(user),hotel)?.hash||null;
+    const p={product:catalog.id,user_id:String(user),hotel_id:hotel,device_id:device,device_token_hash:tokenHash,refresh_origin:'https://ctrip.openlx.cn',plan:e.plan,billing_cycle:e.cycle,expires_at:e.expires_at,issued_at:now(),offline_valid_until:new Date(Math.min(Date.parse(e.expires_at),Date.now()+86400000)).toISOString(),entitlement_id:e.id};
     const raw=Buffer.from(JSON.stringify(p));return {payload:raw.toString('base64url'),signature:crypto.sign(null,raw,fs.readFileSync(keyFile)).toString('base64url')};
   }
   function enroll(user,hotel,device){
-    const signed=license(user,hotel,device),token=crypto.randomBytes(32).toString('base64url'),digest=crypto.createHash('sha256').update(token).digest('hex');
+    license(user,hotel,device);const token=crypto.randomBytes(32).toString('base64url'),digest=crypto.createHash('sha256').update(token).digest('hex');
     db.prepare('INSERT INTO device_tokens VALUES(?,?,?,?,?) ON CONFLICT(device_id) DO UPDATE SET hash=excluded.hash,expires_at=excluded.expires_at').run(digest,device,String(user),hotel,new Date(Date.now()+366*86400000).toISOString());
-    return {...signed,enrollment:{token,device_id:device}};
+    return {...license(user,hotel,device),enrollment:{token,device_id:device}};
   }
   function deviceAuth(token){
     if(typeof token!=='string'||token.length<40)throw Error('DEVICE_AUTH_REQUIRED');
@@ -65,7 +66,7 @@ export function openStore(dir){
       if(operation==='acquire'&&old&&old.expires_at>time)throw Error('HOTEL_WRITER_BUSY');
       if(!['acquire','renew'].includes(operation))throw Error('INVALID_LEASE_OPERATION');
       const id=operation==='renew'?old.lease_id:crypto.randomUUID(),until=time+120000;
-      db.prepare('INSERT INTO writer_leases VALUES(?,?,?,?) ON CONFLICT(hotel_id) DO UPDATE SET device_id=excluded.device_id,lease_id=excluded.lease_id,expires_at=excluded.expires_at').run(d.hotel_id,d.device_id,id,until);db.exec('COMMIT');return {lease_id:id,expires_at:until};
+      db.prepare('INSERT INTO writer_leases VALUES(?,?,?,?) ON CONFLICT(hotel_id) DO UPDATE SET device_id=excluded.device_id,lease_id=excluded.lease_id,expires_at=excluded.expires_at').run(d.hotel_id,d.device_id,id,until);db.exec('COMMIT');return {lease_id:id,expires_at:until,hotel_id:d.hotel_id,device_id:d.device_id,user_id:d.user_id};
     }catch(e){db.exec('ROLLBACK');throw e;}
   }
   function ticket(user,hotel,type,request){

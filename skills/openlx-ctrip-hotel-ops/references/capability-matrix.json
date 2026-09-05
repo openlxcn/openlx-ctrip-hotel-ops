@@ -1,6 +1,6 @@
 {
   "document_type": "IMPLEMENTATION_AND_EVIDENCE_TRACKER",
-  "reviewed_at": "2026-09-05T18:14:40.749796+00:00",
+  "reviewed_at": "2026-09-05T18:21:46.305774+00:00",
   "scope": "RELEASE_0_1_0",
   "axes": [
     "implementation",
@@ -62,13 +62,13 @@
         "T40",
         "T43"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -138,13 +138,13 @@
         "T04",
         "T37"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -211,13 +211,13 @@
         "T04",
         "T29"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -284,13 +284,13 @@
         "T07",
         "T12"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -357,13 +357,13 @@
         "T07",
         "T20"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -387,7 +387,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -435,13 +435,13 @@
         "T16",
         "T42"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -509,13 +509,13 @@
         "T05",
         "T20"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -579,13 +579,13 @@
       "acceptance_ids": [
         "T20"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -606,7 +606,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -654,13 +654,13 @@
         "T20",
         "T42"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -729,13 +729,13 @@
         "T18",
         "T19"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -804,13 +804,13 @@
         "T18",
         "T19"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -879,13 +879,13 @@
         "T18",
         "T19"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -952,13 +952,13 @@
         "T04",
         "T15"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1026,13 +1026,13 @@
         "T16",
         "T17"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1056,7 +1056,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1108,13 +1108,13 @@
         "T18",
         "T23"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1138,7 +1138,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1190,13 +1190,13 @@
         "T21",
         "T23"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1220,7 +1220,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1267,13 +1267,13 @@
         "T21",
         "T22"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1295,7 +1295,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1341,13 +1341,13 @@
       "acceptance_ids": [
         "T23"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1369,7 +1369,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1417,13 +1417,13 @@
         "T19",
         "T33"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1492,13 +1492,13 @@
         "T18",
         "T19"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1568,13 +1568,13 @@
         "T11",
         "T12"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1642,13 +1642,13 @@
         "T12",
         "T16"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1672,7 +1672,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1722,13 +1722,13 @@
         "T12",
         "T16"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1752,7 +1752,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1800,13 +1800,13 @@
         "T06",
         "T45"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1877,13 +1877,13 @@
         "T42",
         "T44"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1904,7 +1904,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -1953,13 +1953,13 @@
         "T26",
         "T27"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -1980,7 +1980,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -2029,13 +2029,13 @@
         "T32",
         "T39"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2056,7 +2056,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -2104,13 +2104,13 @@
         "T28",
         "T29"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2175,13 +2175,13 @@
         "T26",
         "T29"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2248,13 +2248,13 @@
         "T11",
         "T29"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2323,13 +2323,13 @@
         "T29",
         "T30"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2397,13 +2397,13 @@
         "T29",
         "T30"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2469,13 +2469,13 @@
         "T30",
         "T45"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2541,13 +2541,13 @@
       "acceptance_ids": [
         "T39"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2568,7 +2568,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -2614,13 +2614,13 @@
       "acceptance_ids": [
         "T38"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2642,7 +2642,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -2691,13 +2691,13 @@
         "T20",
         "T33"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2721,7 +2721,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -2771,13 +2771,13 @@
         "T36",
         "T45"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2798,7 +2798,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -2857,13 +2857,13 @@
         "T42",
         "T44"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2884,7 +2884,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -2932,13 +2932,13 @@
         "T37",
         "T41"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -2962,7 +2962,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -3009,13 +3009,13 @@
         "T35",
         "T36"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -3039,7 +3039,7 @@
         "mock_test": {
           "status": "PARTIAL_MOCK_PASS",
           "evidence_ids": [
-            "LOCAL_TESTS_25"
+            "LOCAL_TESTS_28"
           ],
           "note": "已覆盖局部场景，不代表对应所有T编号整体通过"
         },
@@ -3086,13 +3086,13 @@
         "T40",
         "T46"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -3166,13 +3166,13 @@
         "T43",
         "T46"
       ],
-      "assessment_scope": "0.1.0客户端与官网；账户实测与真人交付单独记录",
+      "assessment_scope": "0.1.1客户端与官网；账户实测与真人交付单独记录",
       "target": {
         "environment": null,
         "account_id": null,
         "hotel_id": null,
         "object_id": null,
-        "software_version": "0.1.0",
+        "software_version": "0.1.1",
         "adapter_version": null
       },
       "required_dimensions": [
@@ -3203,7 +3203,8 @@
         },
         "live_write": {
           "status": "NOT_RUN",
-          "evidence_ids": []
+          "evidence_ids": [],
+          "note": "构建时0.1.1尚待发行；实际发布结果见官网/status.json和GitHub evidence/release-verification.json"
         },
         "backend_readback": {
           "status": "NOT_RUN",
@@ -3211,7 +3212,8 @@
         },
         "public_readback": {
           "status": "NOT_RUN",
-          "evidence_ids": []
+          "evidence_ids": [],
+          "note": "每个版本发行后另行回读"
         },
         "human_delivery": {
           "status": "NOT_RUN",

@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-05T18:27:44.272832+00:00",
+  "version": "0.1.1",
+  "source": "INDEPENDENT_AGENT_MEMORY_FIXTURE_CHECK",
+  "result": "PASS",
+  "token_swap": "REJECTED_BEFORE_REQUEST",
+  "wrong_lease_identity_and_expiry": "REJECTED",
+  "concurrent_renewal": "SINGLE_REQUEST_ALL_WAITERS_REJECT_ON_FAILURE",
+  "released_lease_late_success": "REJECTED",
+  "pre_upload_lease_loss": {
+    "cases": 6,
+    "upload_calls": 0,
+    "submit_calls": 0
+  },
+  "network_calls": 0,
+  "persistent_credentials_created": 0,
+  "live_multi_device": "NOT_RUN"
+}

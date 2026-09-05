@@ -35,9 +35,9 @@ export async function noteOperation(w,file,operation,expectedHash){
     ctx=await context(w.base,'content');const page=ctx.pages()[0]||await ctx.newPage();await page.goto(url,{waitUntil:'domcontentloaded'});if(operation!=='public')await identity(page,m,'content');
     if(operation==='open'){if(!n.title||!n.body)throw Error('EDITOR_FIELDS_UNMAPPED');await page.locator(n.title).waitFor();await page.locator(n.body).waitFor();evidence.status='LIVE_READ_PASS';}
     if(['upload','save','submit'].includes(operation)){
-      if(!n.title||!n.body||!n.upload)throw Error('NOTE_FIELDS_UNMAPPED');await page.locator(n.title).fill(d.title);await page.locator(n.body).fill(d.body);await page.locator(n.upload).setInputFiles(d.assets.map(a=>a.path));
+      if(!n.title||!n.body||!n.upload)throw Error('NOTE_FIELDS_UNMAPPED');await lease.assert();await page.locator(n.title).fill(d.title);await lease.assert();await page.locator(n.body).fill(d.body);await lease.assert();await page.locator(n.upload).setInputFiles(d.assets.map(a=>a.path));
       if(!n.upload_success)throw Error('UPLOAD_READBACK_UNMAPPED');await page.locator(n.upload_success).waitFor({timeout:30000});evidence.upload='LIVE_WRITE_PASS';
-      if(n.ai_disclosure){await page.locator(n.ai_disclosure).check();}
+      if(n.ai_disclosure){await lease.assert();await page.locator(n.ai_disclosure).check();}
       if(operation==='save'||operation==='submit'){
         const button=operation==='save'?n.save:n.submit;if(!button)throw Error('SUBMIT_UNMAPPED');await identity(page,m,'content');if(lease)await lease.assert();submitted=true;d.status='UNKNOWN';writeJson(file,d);await page.locator(button).click();
         if(!n.object_id||!n.backend_link)throw Error('OBJECT_READBACK_UNMAPPED');await page.locator(n.object_id).waitFor();d.platform_object_id=(await page.locator(n.object_id).innerText()).trim();

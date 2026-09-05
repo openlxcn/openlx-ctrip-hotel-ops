@@ -1,0 +1,75 @@
+{
+  "at": "2026-09-05T18:20:23.520Z",
+  "scope": "OPENLX_WEBSITE_ONLY",
+  "https": "PASS",
+  "website": "https://ctrip.openlx.cn",
+  "checks": [
+    {
+      "route": "/",
+      "status": 200,
+      "bytes": 12515
+    },
+    {
+      "route": "/health",
+      "status": 200,
+      "bytes": 68
+    },
+    {
+      "route": "/account",
+      "status": 200,
+      "bytes": 5338
+    },
+    {
+      "route": "/docs",
+      "status": 200,
+      "bytes": 6249
+    },
+    {
+      "route": "/reports",
+      "status": 200,
+      "bytes": 14621
+    },
+    {
+      "route": "/api/public/config",
+      "status": 200,
+      "bytes": 10372
+    },
+    {
+      "route": "/api/session",
+      "status": 200,
+      "bytes": 94
+    },
+    {
+      "route": "/status.json",
+      "status": 200,
+      "bytes": 2962
+    },
+    {
+      "route": "/release.json",
+      "status": 200,
+      "bytes": 358
+    },
+    {
+      "asset": "service-group-qr.png",
+      "same_as_wx": true,
+      "sha256": "08036a939ff24136cfb94ee05b75251011f0f295aa75a6f908097a171393b1f8"
+    },
+    {
+      "asset": "personal-qr.png",
+      "same_as_wx": true,
+      "sha256": "530c09fa1f4b4ab6ab608d6c0d76d43c6a2101dc65c5b7ff3fc308da89ea0c60"
+    }
+  ],
+  "original_wx_health": 200,
+  "feature_count": 12,
+  "payments_configured": {
+    "alipay": true,
+    "wechat": true
+  },
+  "sales_enabled": false,
+  "shared_identity": "SAME_BACKEND_CONFIGURED_REAL_LOGIN_NOT_RUN",
+  "smtp": "CONNECTION_AUTH_PASS_MAIL_SENT_0",
+  "real_hotel_reads": 0,
+  "real_hotel_writes": 0,
+  "payment_transactions": 0
+}

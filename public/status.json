@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "updated_at": "2026-09-05T18:14:40.749796+00:00",
+  "version": "0.1.1",
+  "updated_at": "2026-09-05T18:27:44.270372+00:00",
   "product_completion": "PARTIAL",
   "summary": [
     {
@@ -47,8 +47,8 @@
   "evidence": {
     "unit_tests": {
       "status": "MOCK_PASS",
-      "passed": 25,
-      "total": 25,
+      "passed": 28,
+      "total": 28,
       "command": "node --test --test-reporter=spec tests/*.test.mjs",
       "artifact": "evidence/local-tests.txt"
     },
@@ -64,7 +64,7 @@
     "payment_transaction": "NOT_RUN",
     "smtp_delivery": "NOT_RUN",
     "website": "DEPLOYED_HTTPS_PUBLIC_READBACK_PASS",
-    "github_release": "NOT_PUBLISHED",
+    "github_release": "BUILD_READY",
     "smtp_connection_auth": "CONNECTION_AUTH_PASS",
     "shared_identity_proxy": "CONFIGURED_BACKEND_ALIVE_LOGIN_NOT_RUN",
     "payment_configuration": {
@@ -79,7 +79,9 @@
       "annual_supreme_fen": 39999,
       "horizontal_overflow": false,
       "page_errors": 0
-    }
+    },
+    "github_url": "https://github.com/openlxcn/openlx-ctrip-hotel-ops/releases/tag/v0.1.1",
+    "website_url": "https://ctrip.openlx.cn"
   },
   "open_gaps": [
     "真实商家与内容账号字段映射和权限需实测",
@@ -89,5 +91,8 @@
     "设备续取与服务器写租约已实现并模拟验证；真实双设备后台并发与迁移未实测",
     "真实支付交易与邮箱送达未实测；收费暂未开放",
     "Windows安装尚未实测"
-  ]
+  ],
+  "artifact_state": "BUILT",
+  "publication_status_url": "https://ctrip.openlx.cn/status.json",
+  "publication_note": "安装包内记录构建时状态；网站和GitHub发布后证据以publication_status_url及仓库evidence/release-verification.json为准。"
 }
