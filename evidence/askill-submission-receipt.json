@@ -1,0 +1,37 @@
+{
+  "submitted_at": "2026-09-05T19:28:06.298594+00:00",
+  "platform": "askill",
+  "status": "INDEXED_CLI_SEARCH_INFO_CONFIRMED",
+  "source_url": "https://github.com/openlxcn/openlx-ctrip-hotel-ops/tree/main/skills/openlx-ctrip-hotel-ops",
+  "functional_version": "0.1.1",
+  "registry_version": "NOT_REPORTED_SOURCE_INDEX_ONLY",
+  "skill_id": 703904,
+  "public_url": "https://askill.sh/skills/703904",
+  "owner": "openlxcn",
+  "repo": "openlx-ctrip-hotel-ops",
+  "path": "skills/openlx-ctrip-hotel-ops",
+  "install_source": "gh:openlxcn/openlx-ctrip-hotel-ops@openlx-ctrip-hotel-ops",
+  "cli_package": "askill-cli@0.1.15",
+  "submit_exit_code": 0,
+  "search_exit_code": 0,
+  "info_exit_code": 0,
+  "submit_response": "Found and indexed 1 skill; indexed skills/openlx-ctrip-hotel-ops/SKILL.md (openlx-ctrip-hotel-ops); Submitted openlxcn/openlx-ctrip-hotel-ops",
+  "new_license_grant": false,
+  "payment": false,
+  "login_required": false,
+  "submission_payload_fields": [
+    "url"
+  ],
+  "browser_operations": 0,
+  "source_files_modified": false,
+  "readback": "Official CLI search matched item and info matched owner/repository/path",
+  "description_source": "GitHub SKILL.md frontmatter; no independent custom short description submitted",
+  "official_docs": "https://github.com/avibe-bot/askill/blob/main/docs/publishing.md",
+  "tool_scope": "Independent official CLI indexing workflow after exact CUA restriction scope clarified; CUA remains stopped for this URL",
+  "logs": [
+    "askill-submit.log",
+    "askill-search.log",
+    "askill-info.log",
+    "askill-info-703904.log"
+  ]
+}
