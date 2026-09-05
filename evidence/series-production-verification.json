@@ -100,12 +100,20 @@
     "shared/wx-api/series.js": "63a114fba62ee9c7f4cb7b16528979458c15518f28d0a51b703442dc0ff481be",
     "src/server.mjs": "46b8c167f8bce75578cbda5962f2dcbe9c6b6748bfdcfc76ad4d03f9f07f5b36",
     "src/series-sync.mjs": "7586490c349d5c647ca75161090f92b7161aafeff1b35f6b0d0f8a27af67be3c",
-    "public/index.html": "7ab2c16ea0f1593b41abfd5a8222159ce67c0ab5346d3ea5afd6e0a1aaf9672a",
+    "public/index.html": "0a8ce2cb65f02f8f162bd953fae86e9597113590bc0694cfebb2442eed92719f",
     "public/account.js": "8198e08ca5e3aab50db8a11e8d8c4bcdcc1aa77e8237e476e726e7ed9a958efe",
     "public/docs.html": "2054c77e8bcc654e168fc78947a891e3566563c2204277ba9201633aece7a26b"
   },
   "backup": "/root/openlx-series-backups/20260905T185129Z",
   "platform_status_file": "../coordination/ctrip-platform-publishing/PUBLISHING_STATUS.md",
   "paid_transactions": 0,
-  "hotel_platform_actions": 0
+  "hotel_platform_actions": 0,
+  "public_introduction_readback": {
+    "status": "PASS",
+    "website": "https://ctrip.openlx.cn",
+    "skillhub": "https://skillhub.cn/skills/user_ae43c502/openlx-ctrip-hotel-ops",
+    "source_commit": "867ebe2",
+    "website_bytes_match": true,
+    "recorded_stage": "after platform link addition"
+  }
 }
