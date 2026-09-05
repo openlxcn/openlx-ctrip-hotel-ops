@@ -1,0 +1,39 @@
+(node:85828) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ authorized pricing isolates one failure and rejects changed scope (6.084334ms)
+✔ daily content produces only one present-day draft and never calls submit without policy (18.041334ms)
+✔ model sends allowlisted facts only and output stays awaiting review (6.558583ms)
+(node:85829) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ all prices are exact and no trial or voucher package can create order (9.982667ms)
+✔ calendar months clamp correctly at month end (0.078125ms)
+✔ payment exact amount, merchant method, idempotency and renewal preserve entitlement (5.645875ms)
+✔ service ticket is not delivered and annual persona requires annual plan (7.925541ms)
+✔ HTTP website isolates session, requires CSRF and exposes no test-payment bypass (49.616792ms)
+✔ registered device refresh is revocable and concurrent writers cannot both hold a lease (11.056708ms)
+(node:85830) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ mixed five-star review always requires confirmation (0.686375ms)
+✔ only unambiguous fallback whitelist replies automatically (0.317ms)
+✔ free reports keep every issue and unknown section; injection and sensitive fields are escaped (1.644708ms)
+✔ paid report and print source remove promotional footer without losing provenance (0.299917ms)
+✔ no fictitious whole-hotel occupancy without authoritative scope (0.124375ms)
+✔ settlement is not deducted twice and unknown costs stay unknown (0.083875ms)
+✔ competitor sold out and unequal benefits never treated as comparable zero (0.212333ms)
+✔ price guardrails reject free autopilot, below floor, cumulative drift and conflicts (0.263042ms)
+✔ PMS and stale event signals cannot authorize automated pricing (0.468541ms)
+✔ action content identity gives idempotency and binds final approval (7.737042ms)
+✔ invalid one asset does not block eligible files, duplicates are identified (4.961875ms)
+✔ persona is used in content, generated drafts are never published (0.287417ms)
+✔ license binds product, hotel, expiry and signature; client plan is not trusted (1.117291ms)
+✔ hotel snapshot mismatch and noninteger prices fail before use (0.212917ms)
+✔ read failure uses marked fallback without inventing a successful live read (7.678292ms)
+✔ preflight rejection is persisted as not executed and preserves approval hash (4.830625ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 229.930792

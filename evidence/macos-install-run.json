@@ -1,0 +1,44 @@
+{
+  "at": "2026-09-05T18:17:40.833Z",
+  "node": "v22.22.3",
+  "platform": "darwin",
+  "input_type": "MOCK",
+  "installed_path": "/Users/quan/.codex/skills/openlx-ctrip-hotel-ops",
+  "actions": [
+    {
+      "command": "init",
+      "exit_code": 0,
+      "status": "INITIALIZED",
+      "source_type": null,
+      "remote_writes": 0
+    },
+    {
+      "command": "import",
+      "exit_code": 0,
+      "status": "IMPORTED",
+      "source_type": "MOCK",
+      "remote_writes": 0
+    },
+    {
+      "command": "report",
+      "exit_code": 0,
+      "status": "REPORT_GENERATED",
+      "source_type": "MOCK",
+      "remote_writes": 0
+    },
+    {
+      "command": "reviews",
+      "exit_code": 0,
+      "status": "RETURNED",
+      "source_type": null,
+      "remote_writes": 0
+    },
+    {
+      "command": "status",
+      "exit_code": 0,
+      "status": "RETURNED",
+      "source_type": null,
+      "remote_writes": 0
+    }
+  ]
+}

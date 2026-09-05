@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "download_url": "/downloads/openlx-ctrip-hotel-ops-0.1.0.zip",
+  "sha256": "d330e1845cd6c28b680478a86eb9a335ba964dd4c4cc107481d876438a8c00f7",
+  "bytes": 59633,
+  "github": "https://github.com/openlxcn/openlx-ctrip-hotel-ops",
+  "compatibility": "macOS及Linux运行验证见status.json；Windows尚未实测",
+  "file_count": 22
+}

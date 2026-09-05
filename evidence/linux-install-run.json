@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-05T18:18:30.413416+00:00",
+  "environment": "Linux x64",
+  "node": "22.20.0",
+  "install": "LOCAL_RUN_PASS",
+  "dependencies": "npm ci completed",
+  "doctor": "PASS",
+  "import": "MOCK",
+  "report": "REPORT_GENERATED",
+  "daemon_once": "EXIT_0",
+  "hotel_reads": 0,
+  "hotel_writes": 0,
+  "browser_session": "NOT_RUN"
+}

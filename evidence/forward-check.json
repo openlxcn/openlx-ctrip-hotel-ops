@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-05T18:18:30.413416+00:00",
+  "source": "INDEPENDENT_AGENT_BEHAVIOR_REVIEW",
+  "result": "PASS",
+  "checks": {
+    "scheduler_fallback": "preserves last_successful_read_at; marks fallback MOCK; report continues",
+    "execute_preflight": "records refusal and remote_writes 0; approval_hash retained",
+    "notes_pause": "write operations paused; readback and public reach URL checks"
+  },
+  "temporary_keys_removed": true,
+  "remote_calls": 0,
+  "input": "MOCK",
+  "note": "复查后还增加模型适配、日程和设备租约，相应新增由25项本地回归覆盖，不能跨算独立账号验收"
+}
